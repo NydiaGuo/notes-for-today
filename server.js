@@ -23,6 +23,7 @@ app.get('/get-data', (req, res)=>{
     let dataPackage = {
         "notes": db.notes
     } 
+    
     console.log(dataPackage);
     res.send(dataPackage);
 });
