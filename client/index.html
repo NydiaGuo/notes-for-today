@@ -11,27 +11,23 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    
+    <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> -->
 </head>
 <body>
 <div class="container">
-    <header>Notes for Today</header>
-
-
-    <form>
-        <div class="form-row">
-            <label for="title">Note title</label>
-            <input type="text" class="form-control" id="note-texts" required></input>
-        </div>
-        <button class="btn btn-primary" type="submit">Add Notes</button>
-    </form>
-
-    <div class="card text-white bg-info mb-3" style="max-width: 18em;">
-            <div class="card-header text-center">Notes title</div>
-            <div class="card-body">
-                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <header class="display-4 p-4">Notes for Today</header>
+    
+        <form>
+            <div class="form-row">
+                <textarea type="text" class="form-control" id="note-texts" placeholder="Text goes here..." required></textarea>
             </div>
-        </div>
+            <div class="form-row justify-content-end">
+                <button class="btn btn-outline-danger" type="submit">Add Notes</button>
+            </div>
+        
+     
+        </form>
+    <div class="cards"></div>
     
 </div>
  
