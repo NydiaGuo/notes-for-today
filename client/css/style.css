@@ -1,17 +1,133 @@
-html body{
-    background-color: bisque;    
-}
-body header{
-    font-family: 'Indie Flower', cursive;
-
-}
-
-form .form-row{
-    padding: 5px;
+html body {
+  background-color: rgb(248, 179, 82);
+  height: 100%;
+  margin: 0;
+ 
 }
 
-div .card{
-    float: left;
-    margin: 5px;
+.bg {
+  background-image: url("../images/city-bg.gif");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: whitesmoke;
 }
 
+.container h1 {
+  padding: 40px;
+}
+
+#notes-content {
+  padding: 10px 0px 20px 0px;
+}
+
+.container h5 {
+  padding-top: 20px;
+}
+
+
+
+
+ul,li{
+  list-style:none;
+}
+
+ul{
+  overflow:hidden;
+  padding:3em;
+}
+
+
+ul li{
+  margin:1em;
+  float:left;
+}
+
+
+
+ul li a{
+  background:#ffc;
+  display:block;
+  height:13em;
+  width:13em;
+  text-decoration: none !important;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+
+ul li p {
+  padding:5px 15px 5px 15px;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+ul li #update {
+  background:#ffc;
+  width:13em;
+  border: #ffc;
+  color: rgb(143, 143, 140);
+  padding: 3px;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+
+ul li #update:hover {
+  background-color:rgb(66, 175, 22);
+  border:rgb(66, 175, 22);
+  color:white;
+  padding: 3px;
+}
+
+ul li #remove {
+  background-color: #ffc;
+  border: #ffc;
+  padding:1px 8px 1px 8px;
+  color: rgb(143, 143, 140);
+}
+
+ul li #remove:hover {
+  background-color:red;
+  border: red;
+  color:white;
+  padding:1px 8px 1px 8px;
+}
+
+
+
+/* ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+
+ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+
+ul li a:hover,ul li a:focus{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+} */

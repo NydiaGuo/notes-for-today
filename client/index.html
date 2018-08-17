@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Notes for Today</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <meta charset="utf-8">
+    <meta name="description">
+    <meta name="author" content="Ni Guo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes for today</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> -->
+
 </head>
 <body>
-<div class="container">
-    <header class="display-4 p-4">Notes for Today</header>
-    
-        <form>
-            <div class="form-row">
-                <textarea type="text" class="form-control" id="note-texts" placeholder="Text goes here..." required></textarea>
+<div class="bg">
+    <div class="container">
+
+        <h1 class="text-center">Notes for today</h1>
+
+        <div id="notes-content">
+
+            <form>
+                <div class="form-group">
+                    <textarea class="form-control" id="new-note"></textarea>
+                </div>
+            </form>
+            <div class="text-right">
+                <button type="button" class="btn btn-light" id="submit-note">Add Note</button>
             </div>
-            <div class="form-row justify-content-end">
-                <button class="btn btn-outline-danger" id="add-note" type="submit">Add Note</button>
-            </div>
-        
-     
-        </form>
-    <div class="cards"></div>
-    
+        </div>
+    </div>
 </div>
- 
+
+<div class="container">
+    <h5 id="title">Notes:</h5>
+    <ul id="notes-list"></ul>
+</div>
     
-<script src="js/script.js"></script>
+
+
+
+<script src="js/script.js" defer></script>
 </body>
 </html>
