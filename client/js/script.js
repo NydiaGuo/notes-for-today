@@ -6,25 +6,19 @@ $(document).ready(function(){
 
     console.log("this is get route data: ", data);
 
-
-    // let dataID = data.map(function(list){
-    //   return list._id
-    // })
-
     for (let i =0; i < data.length; i++) {
-      // console.log("data of i: ", data[i].$oid);
-      let listItem = "<li data-id="+ dataID+"><a href=#>"+ remove +"<p>" + data[i].text  +"</p></a>"+ updateBtn + "</li>" ;
-      // $("li").attr(data[i].$oid);
+
+      let listItem = "<li data-id="+ data[i]._id+"><a href=#>"+ remove +"<p>" + data[i].text  +"</p></a>"+ updateBtn + "</li>" ;
+
       $("#notes-list").append(listItem);
 
     }
 
-
     $('.remove').click((e)=>{
       e.preventDefault();
 
-  
-      console.log("remove clicked: ", $(this).parent());
+
+      console.log("remove clicked: ", $(this));
   
       // $.post("http://localhost:8000/drop-data",)
   
